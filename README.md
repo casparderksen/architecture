@@ -35,7 +35,7 @@ Layers and package structure:
     - `rest`: REST API (thin, no logic other than DTO mapping and building responses)
 - `org.my.util.<slice>`: application independent generic logic (could be moved to library)
 
-# Dependency rules
+## Dependency rules
 
 - Slices must be independent
 - There must not be cyclic dependencies
@@ -50,11 +50,24 @@ Consequences:
 - Use application services to send data from an input adapter to an output adapter (workflow).
 - Use Dependency Inversion or domain events for invoking adapters from domain or application services.
 
-# Integrity of models
+## Validating architecture rules
+
+Use [ArchUnit](https://www.archunit.org) unit tests for validating compliance to these rules.
+
+## Integrity of models
 
 We want domain and JPA entities to be consistent and valid at all times.
 Therefore, REST adapters use DTOs as separate input and output models.
-These models are mapped from/to domain models (this is largely automated with MapStruct).
+DTOs and JAXs parameters must always be validated.
+
+# Java frameworks for data mapping
+
+The following frameworks for data mapping are used: 
+- JAXB for XML to/from object mapping (implicit with JAX-RS)
+- JSON-B for JSON to/from object mapping (implicit with JAX-RS)
+- JPA for object-relational mapping
+- MapStruct for object-to-object mapping (model-2-model)
+Rationale: low/or no coding required. MapStruct is a compiler- time framework.
 
 # Clean Architecture Principles
 
