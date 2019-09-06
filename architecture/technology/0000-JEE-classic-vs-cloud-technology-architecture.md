@@ -4,10 +4,9 @@ Comparison between JEE application in Classic IT and private cloud from technolo
 
 # Technology architecture
 
-![Alt text](./0000-JEE-classic-vs-cloud-technology-architecture.svg)
-<img src="./0000-JEE-classic-vs-cloud-technology-architecture.svg">
+![JEE Technology stack cloud vs classic](./0000-JEE-classic-vs-cloud-technology-architecture.svg)
 
-Image source: [here](https://docs.google.com/presentation/d/1XKH50tbcgSswZFIBNtuN8qkmvSUdr5ooEhVdqnXcuQs/edit?usp=sharing)
+[Source image](https://docs.google.com/presentation/d/1XKH50tbcgSswZFIBNtuN8qkmvSUdr5ooEhVdqnXcuQs/edit?usp=sharing)
 
 # Notes
 
