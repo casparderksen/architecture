@@ -38,7 +38,7 @@ Comparison between JEE application in Classic IT and private cloud from technolo
   - does not provide ordering of messages (desirable for receiving multiple versions of documents in order)
   - does not support replay for time travelling
   - does not support load-balancing (clients must know cluster IPs)
-  - pushes to clients instead if pull (clients cannot be ephemeral and does not scale)
+  - pushes to clients instead of pull (clients cannot be ephemeral and does not scale)
   - pub-sub not possible with ephemeral clients (subscribers to a topic must
     be registered before a message from a topic can be received).
 - Classic: team responsibilities not aligned with technological boundaries
