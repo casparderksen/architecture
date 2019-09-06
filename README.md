@@ -70,7 +70,7 @@ Use [ArchUnit](https://www.archunit.org) unit tests for validating compliance to
 
 We want domain and JPA entities to be consistent and valid at all times.
 Therefore, REST adapters use DTOs as separate input and output models.
-DTOs and JAXs parameters must always be validated.
+DTOs and JAX-RS parameters must always be validated.
 
 ## Java frameworks for data mapping
 
