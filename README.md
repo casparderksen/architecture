@@ -1,6 +1,10 @@
 # About
 
-This project documents what I know and believe in about Architecture under an Open Source license.
+This project documents best practices, knowledge and beliefs about Architecture under an Open Source license.
+
+# Contributing
+
+Fork this project, add yourself to the list of contributers and send a pull request. Contributions must be licensed under a compatible [LICENSE](LICENSE). If you see an error, or do not agree, please open an issue.
 
 # Blog
 
@@ -131,3 +135,8 @@ Tests are written in accordance to the Testing Pyramid.
 It must be possible to build the system with a single command. Builds are portable across environments.
 
 ## Binary promotion of artifacts
+
+# Contributors
+
+In alphabetical order:
+- Caspar Derksen
