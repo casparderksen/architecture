@@ -1,20 +1,32 @@
 # About
 
-This project documents generic Architecture Decisions that should apply to any software project.
-This is a first brain dump.
+This project documents what I know and believe in about Architecture under an Open Source license.
 
-# Architecture decisions
+# Blog
+
+# Principles 
+
+# Patterns
+
+# Architecture
+
+* [Technology](architecture/technology)
+
+# Architecture Decisions
+
+This section documents generic Architecture Decisions that should apply to any software project.
+This is a first brain dump.
 
 An 'Architecture Decision' is a design decision that addresses a functional or non-functional requirement
 that is architecturally significant. Decisions are architecturally significant if they are hard to change
 afterwards. This may include technology selection and library choices. 
 
-# Documentation 
+## Documentation 
 
 Architecture decisions are recorded as [MADR](https://adr.github.io/madr/) documents in version control. 
 TODO: refactor this document to MADR records.
 
-# Code organization
+## Code organization
 
 The application is organized according to
 [Onion Architecture](https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/) principles
@@ -60,7 +72,7 @@ We want domain and JPA entities to be consistent and valid at all times.
 Therefore, REST adapters use DTOs as separate input and output models.
 DTOs and JAXs parameters must always be validated.
 
-# Java frameworks for data mapping
+## Java frameworks for data mapping
 
 The following frameworks for data mapping are used: 
 - JAXB for XML to/from object mapping (implicit with JAX-RS)
@@ -69,7 +81,7 @@ The following frameworks for data mapping are used:
 - MapStruct for object-to-object mapping (model-2-model)
 Rationale: low/or no coding required. MapStruct is a compiler- time framework.
 
-# Clean Architecture Principles
+## Clean Architecture Principles
 
 - Testable: use cases and business rules can be tested without user interface, database or other external dependencies.
 - Independent of frameworks: the architecture does not depend on invasive frameworks, products, of vendor-specific 
@@ -86,7 +98,7 @@ Consequences:
 - Keep the domain layer framework free from frameworks as much as possible. Restrict dependency injection to 
   the adapter and application layer for wiring the application together at startup.
   
-# Microservices architecture
+## Microservices architecture
 
 - Applications are decomposed according to business capabilities
 - Loose coupling between services, high cohesion inside services
@@ -97,25 +109,25 @@ Consequences:
 - Independently deployable
 - Small and frequent releases
 
-# SOLID principles
+## SOLID principles
 
 Classes are designed according to SOLID principles.
 
-# Grasp principles
+## Grasp principles
 
 Responsibilities are assigned according to GRASP principles.
 
-# Functional style
+## Functional style
 
 Prefer immutable objects (values) and functional programming style. A method is either a function without side
 effects, or a command that performs some action.
 
-# Testing Pyramid
+## Testing Pyramid
 
 Tests are written in accordance to the Testing Pyramid.
 
-# Portable builds
+## Portable builds
 
 It must be possible to build the system with a single command. Builds are portable across environments.
 
-# Binary promotion of artifacts
+## Binary promotion of artifacts
