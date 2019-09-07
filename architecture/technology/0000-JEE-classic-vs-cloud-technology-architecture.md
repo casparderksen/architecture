@@ -41,33 +41,5 @@ Comparison between JEE application in Classic IT and private cloud from technolo
   - pushes to clients instead of pull (clients cannot be ephemeral and does not scale)
   - pub-sub not possible with ephemeral clients (subscribers to a topic must
     be registered before a message from a topic can be received).
-    
-# Vision on Platform services
-
-- The Platform team provides value to other DevOps teams by developing and hosting services that require substantial effort
-  and knowledge to develop and operate. This enables DevOps team to focus on delivering value to the Business.
-- In classic IT, team responsibilities are often not aligned with technological boundaries. This makes it hard to define 
-  service agreements and improve performance. Platform teams are often overloaded with change requests and 
-  incidents, and lack resources for innovation.
-- In the cloud, DevOps and Platform teams are equal tennants. A DevOps team provides services that are useful to the business.
-  The Platform team is just another DevOps team that provides services other DevOps teams. By rigourous automation and
-  self-service delivery of the Platform, time is made availabile for continuous service improvement and innovation.
-- In classic IT, platform services are hosted on static and shared infrastructure. In the cloud, additional service delivery
-  models are possible:
-  1. BYO: developed, hosted and consumed by a DevOps team. 
-     Service is fully customizable. 
-     This model enables continuous innovation of the Platform.
-     Use this model to experiment and introduce new technology.
-     A useful BYO service may evolve into a new Platform Service.
-  2. Fork-and-run: developed by the Platform team, hosted and consumed by a DevOps team. 
-     Service is opinated and has limited customization options.
-     This model enables continuous improvement of the platform via pull requests instead of change requests.
-     This is useful for ephemeral services, such as a build server, or data masking service. 
-  3. Shared service: developed and hosted by the Platform team, consumed by a DevOps team.
-     Needed for stafeful services that operate on shared data. Examples of such services are Github, or an
-     artifact repository.
-- BYO vs Platform is a trade-off between flexibility and operational excellence.
-- In classic IT, the Technology Domain Architecture is the result of a top down process, focussed on control instead 
-  of enablement. Typically, innovation is slow and painful. In the cloud, the Platform can be seen as a codification 
-  of the Technology Domain Architecture. New service models enable innovation and collaborative evolution of the
-  architecture.
+- Note that in Classic IT, resposibilities between Core, Platform and DevOps teams are not aligned with technical boundaries.
+  See [Vision on Platform Services in the Cloud](https://github.com/casparderksen/architecture/wiki/Vision-on-Platform-Services-in-the-Cloud).
