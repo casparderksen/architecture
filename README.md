@@ -6,9 +6,9 @@ This project documents best practices, knowledge and beliefs about Architecture 
 
 Fork this project, add yourself to the list of contributers and send a pull request. Contributions must be licensed under a compatible [LICENSE](LICENSE). If you see an error, or do not agree, please open an issue or comment on the Wiki
 
-# Wiki
+# Architecture Wiki
 
-See [Wiki](wiki) for documentation.
+See [Wiki](https://github.com/casparderksen/architecture/wiki) for documentation.
 
 # Contributors
 
