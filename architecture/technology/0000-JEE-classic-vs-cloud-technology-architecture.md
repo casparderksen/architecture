@@ -66,7 +66,7 @@ Comparison between JEE application in Classic IT and private cloud from technolo
   3. Shared service: developed and hosted by the Platform team, consumed by a DevOps team.
      Needed for stafeful services that operate on shared data. Examples of such services are Github, or an
      artifact repository.
-  BYO vs Platform is a trade-off between flexibility and operational excellence.
+- BYO vs Platform is a trade-off between flexibility and operational excellence.
 - In classic IT, the Technology Domain Architecture is the result of a top down process, focussed on control instead 
   of enablement. Typically, innovation is slow and painful. In the cloud, the Platform can be seen as a codification 
   of the Technology Domain Architecture. New service models enable innovation and collaborative evolution of the
